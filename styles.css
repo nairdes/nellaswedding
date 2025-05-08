@@ -3,9 +3,30 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    /*font-weight: NUMERIC_WEIGHT_VALUE; */
+    src: url(Quicksand/static/Quicksand-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: 600;
+    /*font-weight: NUMERIC_WEIGHT_VALUE; */
+    src: url(Quicksand/static/Quicksand-SemiBold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: bold;
+    /*font-weight: NUMERIC_WEIGHT_VALUE; */
+    src: url(Quicksand/static/Quicksand-Bold.ttf) format('truetype');
+  }
+
   body {
-    font-family: Arial, sans-serif;
+    font-family: Quicksand, sans-serif;
     line-height: 1.6;
   }
   
