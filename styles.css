@@ -4,48 +4,36 @@
     box-sizing: border-box;
   }
 
-  @font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    /*font-weight: NUMERIC_WEIGHT_VALUE; */
-    src: url(Quicksand/static/Quicksand-Regular.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Quicksand';
-    font-style: 600;
-    /*font-weight: NUMERIC_WEIGHT_VALUE; */
-    src: url(Quicksand/static/Quicksand-SemiBold.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Quicksand';
-    font-style: bold;
-    /*font-weight: NUMERIC_WEIGHT_VALUE; */
-    src: url(Quicksand/static/Quicksand-Bold.ttf) format('truetype');
-  }
-
   body {
     font-family: Quicksand, sans-serif;
     line-height: 1.6;
+    background-color: #ffaf6d;
+    overscroll-behavior: none;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
   }
   
   header {
-    background-color: #333;
-    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
   }
-  
   .hero {
+    background-image: url("assets/Background_Hero_IMG.png");
+    background-color: #ffaf6d;
     padding: 2rem;
     text-align: center;
-    background-color: #444;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 50vh;
   }
   
   nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #222;
   }
   
   nav ul li {
@@ -74,4 +62,41 @@
   .content-section.active {
     display: block;
   }
+
+  .quicksand-light {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .quicksand-regular {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .quicksand-semibold {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .quicksand-bold {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .quicksand-heavy {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
   
