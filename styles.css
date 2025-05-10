@@ -70,6 +70,10 @@ seems to not affect header images but other images are fine-ish */
     display: block;
   }
 
+  h2 {
+    text-align: center;
+  }
+
   /* Create two equal columns that floats next to each other */
 .column {
   float: left;
