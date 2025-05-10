@@ -17,7 +17,7 @@
 /* make the image scale when resizing window,
 seems to not affect header images but other images are fine-ish */
   img {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
   }
   
@@ -34,6 +34,10 @@ seems to not affect header images but other images are fine-ish */
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 50vh;
+  }
+
+  .datebar {
+    text-align: center;
   }
   
   nav ul {
