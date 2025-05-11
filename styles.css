@@ -74,6 +74,23 @@ seems to not affect header images but other images are fine-ish */
     display: block;
   }
 
+  /* make the rsvp form responsive */
+  .rsvp-wrapper {
+    position: relative;
+    padding-bottom: 63.30%;
+    /* equals the proportions of the form, 640 / 1011 */
+    height: 0;
+  }
+  
+  /* second part of making the rsvp form responsive */
+  .rsvp-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   h2 {
     text-align: center;
   }
