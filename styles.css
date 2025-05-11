@@ -14,13 +14,19 @@
     font-weight: 300;
     font-style: normal;
   }
+
 /* make the image scale when resizing window,
 seems to not affect header images but other images are fine-ish */
   img {
     max-width: 100%;
     height: auto;
   }
-  
+
+  #nellasarah {
+    max-width: 35%;
+    height: auto;
+  }
+
   header {
     position: sticky;
     top: 0;
