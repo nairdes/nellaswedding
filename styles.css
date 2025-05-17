@@ -22,7 +22,7 @@ seems to not affect header images but other images are fine-ish */
     height: auto;
   }
 
-  #nellasarah {
+  .hero img {
     max-width: 35%;
     height: auto;
   }
