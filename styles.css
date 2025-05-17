@@ -1,107 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: Quicksand, sans-serif;
-    line-height: 1.6;
-    background-color: #ffaf6d;
-    overscroll-behavior: none;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
+body {
+  font-family: Quicksand, sans-serif;
+  line-height: 1.6;
+  background-color: #ffaf6d;
+  overscroll-behavior: none;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
 /* make the image scale when resizing window,
 seems to not affect header images but other images are fine-ish */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .hero img {
-    max-width: 35%;
-    height: auto;
-  }
+.hero img {
+  max-width: 50%;
+  height: auto;
+}
 
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  .hero {
-    background-image: url("assets/Background_Hero_IMG.png");
-    background-color: #ffaf6d;
-    padding: 2rem;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    height: 50vh;
-  }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-  .datebar {
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem;
-    display: inline-block;
-  }
-  
-  nav ul li a:hover {
-    /*background-color: #ffaf6d;*/
-    opacity: 0.6;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  .content-section {
-    display: none;
-  }
-  
-  .content-section.active {
-    display: block;
-  }
+.hero {
+  background-image: url("assets/Background_Hero_IMG.png");
+  background-color: #ffaf6d;
+  padding: 2rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* make the rsvp form responsive */
-  .rsvp-wrapper {
-    position: relative;
-    padding-bottom: 63.30%;
-    /* equals the proportions of the form, 640 / 1011 */
-    height: 0;
-  }
-  
-  /* second part of making the rsvp form responsive */
-  .rsvp-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.datebar {
+  text-align: center;
+}
 
-  h2 {
-    text-align: center;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
 
-  /* Create two equal columns that floats next to each other */
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  /*background-color: #ffaf6d;*/
+  opacity: 0.6;
+}
+
+main {
+  padding: 2rem;
+  /* next three properties to make content center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* make the rsvp form responsive */
+.rsvp-wrapper {
+  position: relative;
+  padding-bottom: 63.30%;
+  /* equals the proportions of the form, 640 / 1011 */
+  height: 0;
+}
+
+/* second part of making the rsvp form responsive */
+.rsvp-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
@@ -122,40 +132,37 @@ seems to not affect header images but other images are fine-ish */
   }
 }
 
-  .quicksand-light {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
+.quicksand-light {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
-  .quicksand-regular {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+.quicksand-regular {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .quicksand-semibold {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
+.quicksand-semibold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
-  .quicksand-bold {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .quicksand-heavy {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-
-  
+.quicksand-heavy {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
