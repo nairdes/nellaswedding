@@ -7,7 +7,10 @@
 body {
   font-family: Quicksand, sans-serif;
   line-height: 1.6;
-  background-color: #ffaf6d;
+  background: rgba(255, 175, 109);
+  background-image: url("assets/Background_Hero_IMG.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
   overscroll-behavior: none;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -34,12 +37,8 @@ header {
 }
 
 .hero {
-  background-image: url("assets/Background_Hero_IMG.png");
-  background-color: #ffaf6d;
   padding: 2rem;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: 100vw;
   height: 50vh;
   display: flex;
   flex-direction: row;
