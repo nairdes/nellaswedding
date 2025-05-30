@@ -5,21 +5,17 @@
 }
 
 body {
-  font-family: Quicksand, sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.6;
   background: rgba(255, 175, 109);
   background-image: url("assets/Background_Hero_IMG.png");
   background-repeat: no-repeat;
   background-size: 100vw;
   overscroll-behavior: none;
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
-/* make the image scale when resizing window,
-seems to not affect header images but other images are fine-ish */
 img {
   max-width: 100%;
   height: auto;
@@ -41,14 +37,14 @@ header {
 }
 
 .hero {
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
-  height: 50vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .datebar {
@@ -73,13 +69,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  /*background-color: #ffaf6d;*/
   opacity: 0.6;
 }
 
 main {
   padding: 2rem;
-  /* next three properties to make content center */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,19 +87,20 @@ main {
   display: block;
 }
 
+.content-container  {
+  width: 40%;
+}
+
 main p {
   font-size: 28px;
 }
 
-/* make the rsvp form responsive */
 .rsvp-wrapper {
   position: relative;
   padding-bottom: 63.30%;
-  /* equals the proportions of the form, 640 / 1011 */
   height: 0;
 }
 
-/* second part of making the rsvp form responsive */
 .rsvp-wrapper iframe {
   position: absolute;
   top: 0;
@@ -118,58 +113,84 @@ h2 {
   text-align: center;
 }
 
-/* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
   padding: 10px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* Typography classes */
+.quicksand-light { font-weight: 300; }
+.quicksand-regular { font-weight: 400; }
+.quicksand-semibold { font-weight: 500; }
+.quicksand-bold { font-weight: 600; }
+.quicksand-heavy { font-weight: 700; }
+
+/* === Responsive Nav === */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: row; /* Side-by-side on mobile */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #nellasarah {
+    order: -1; /* Move image to the left */
+    width: 50%;
+    max-width: 200px;
+    margin: 0;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background: rgba(255, 175, 109, 0.95);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+  }
+
+  .content-container  {
+    width: 80%;
+  }
+
   .column {
     width: 100%;
   }
-}
-
-.quicksand-light {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.quicksand-regular {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.quicksand-semibold {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.quicksand-bold {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.quicksand-heavy {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
 }
