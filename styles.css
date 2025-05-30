@@ -140,7 +140,15 @@ h2 {
   user-select: none;
 }
 
-@media screen and (max-width: 768px) {
+/* === So content doesn't look awkward on mid-size screens === */
+@media screen and (max-width: 1200px) {
+  .content-container  {
+    width: 65%;
+  }
+}
+
+/* === Tablets and mobile === */
+@media screen and (max-width: 900px) {
   .hero {
     flex-direction: row; /* Side-by-side on mobile */
     justify-content: space-between;
@@ -149,7 +157,7 @@ h2 {
   }
 
   #nellasarah {
-    order: -1; /* Move image to the left */
+    order: -1; /* Move logo to the left in header */
     width: 50%;
     max-width: 200px;
     margin: 0;
