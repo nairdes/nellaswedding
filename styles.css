@@ -97,8 +97,7 @@ main p {
 
 .rsvp-wrapper {
   position: relative;
-  padding-bottom: 63.30%;
-  height: 0;
+  height: 1200px;
 }
 
 .rsvp-wrapper iframe {
