@@ -95,7 +95,7 @@ main p {
   font-size: 28px;
 }
 
-.rsvp-wrapper {
+/* .rsvp-wrapper {
   position: relative;
   height: 1200px;
 }
@@ -106,7 +106,67 @@ main p {
   left: 0;
   width: 100%;
   height: 100%;
+} */
+
+.rsvp-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: "Quicksand", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
 }
+
+.rsvp-form label {
+  font-weight: 500;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.rsvp-form input[type="email"],
+.rsvp-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.rsvp-form textarea {
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.radio-group label {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.rsvp-form button {
+  margin-top: 2rem;
+  background-color: #ffaf6d;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-form button:hover {
+  background-color: #e69759;
+}
+
 
 h2 {
   text-align: center;
