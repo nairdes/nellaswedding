@@ -87,8 +87,20 @@ main {
   display: block;
 }
 
-.content-container  {
+#welcome-banner {
   width: 40%;
+}
+
+#info-banner {
+  width: 60%;
+}
+
+#rsvp-banner {
+  width: 20%;
+}
+
+.content-container  {
+  width: 80%;
 }
 
 main p {
