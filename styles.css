@@ -88,15 +88,30 @@ main {
 }
 
 #welcome-banner {
-  width: 40%;
+  width: 60%;
+}
+
+#welcome {
+  margin: auto;
+  width: fit-content;
 }
 
 #info-banner {
   width: 60%;
 }
 
+#info {
+  margin: auto;
+  width: fit-content;
+}
+
 #rsvp-banner {
-  width: 20%;
+  width: 30%;
+}
+
+#rsvp {
+  margin: auto;
+  width: fit-content;
 }
 
 .content-container  {
